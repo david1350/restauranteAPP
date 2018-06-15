@@ -18,4 +18,15 @@
 
 <ion-content padding>
 
+  <ion-list  *ngFor="let platillo of global.platillos" >
+       <ion-item>
+             <ion-avatar item-start>
+                  <img src="data:image/jpg;base64,{{platillo.imagen}}">
+              </ion-avatar>
+            <h2>{{platillo.nombre}}</h2>
+            <p>{{platillo.descripcion}}</p>
+            <h2>$ {{platillo.precio}}</h2>
+         </ion-item>
+  </ion-list>
+
 </ion-content>

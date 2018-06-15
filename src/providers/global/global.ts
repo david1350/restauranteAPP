@@ -13,6 +13,7 @@ export class GlobalProvider {
 
 	public platillos:any;
 	public listaOrden:any[];
+	public listaOrdenes:any;
 
 
   constructor(public http: HttpClient) {
